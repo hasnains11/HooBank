@@ -167,6 +167,7 @@ filter: blur(325px);
 
 .navbar {
     display: flex;
+    white-space: nowrap;
     justify-content: space-between;
     align-items: center;
     margin: 2rem 8rem;
@@ -208,6 +209,11 @@ filter: blur(325px);
 .navbar-item:hover {
     opacity: 100%;
 }
+
+
+
+
+
 
 /*----Hero Section------*/
 
@@ -254,6 +260,31 @@ filter: blur(325px);
     width: 30rem;
     font-size: 1.125rem;
     line-height: 170%;
+}
+
+
+@media (max-width: 750px) {
+    section{
+        margin: 1rem 4rem;
+    }
+    .navbar-item{
+        font-size: 0.8rem;
+    }
+    .hero-right{
+        display: none;
+    }
+    .hero-text{
+        font-size: 3.5rem;
+    }
+    .hero-description{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .navbar-right{
+        display: none;
+    }
 }
 
 
