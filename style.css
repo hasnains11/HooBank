@@ -9,22 +9,31 @@
     --base-font-size: 1rem;
     --background-color: #00040F;
     --base-line-height: 1.3;
+    --footer-background-color: rgba(11, 10, 12, 0.60);
 
 
 }
 
 /* ---------------General-------- */
+
+html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 body {
     font-family: var(--primary-font);
     font-size: var(--base-font-size);
     background-color: var(--background-color);
-    margin: 2rem 8rem;
-    height: 100vh;
+    margin: 2rem 0rem;
     color: var(--primary-color);
 }
 
 section {
-    margin: 8rem 0;
+    margin: 4rem 8rem;
 }
 
 
@@ -79,23 +88,68 @@ p {
 }
 
 
-
-
 /* Filters */
-.blur {
-    border-radius: 29.4375rem;
-    background: rgba(255, 255, 255, 0.60);
-    filter: blur(150px);
-    position: fixed;
-    top: 10;
-    right: 0;
-    /* Adjust the blur amount as needed */
-}
-
 .blur-hero {
-    width: 25.3125rem;
+    border-radius: 29.4375rem;
+    background: linear-gradient(348deg, #8acfff, #a951be66);
+    filter: blur(100px);
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+    width: 29.3125rem;
     height: 29.4375rem;
 }
+
+
+.blur-hero-left {
+    position: absolute;
+    width: 12.1875rem;
+    height: 20.25rem;
+    border-radius: 20.25rem;
+    background: #FFF;
+    filter: blur(225px);
+    left: 0;
+
+}
+.blur-white{
+    top: 4rem;
+    left: -19rem;
+    position: absolute;
+    width: 15.3125rem;
+    height: 19.4375rem;
+    transform: rotate(176.617deg);
+    flex-shrink: 0;
+    border-radius: 12.5rem;
+    background: linear-gradient(90deg, #F4C4F3 0%, #ffffff 100%);
+    filter: blur(200px);
+}
+
+.blur-pink {
+    top: 4rem;
+    left: -19rem;
+    position: absolute;
+    width: 25.3125rem;
+    height: 29.4375rem;
+    transform: rotate(176.617deg);
+    flex-shrink: 0;
+    border-radius: 12.5rem;
+    background: linear-gradient(90deg, #F4C4F3 0%, #FC67FA 100%);
+    filter: blur(400px);
+}
+
+.blur-blue{
+    top: 4rem;
+    right: -4rem;
+    position: absolute;
+    width: 27.2825rem;
+height: 34.00413rem;
+transform: rotate(47.457deg);
+flex-shrink: 0;
+    border-radius: 12.5rem;
+background: linear-gradient(90deg, #1A2980 0%, #26D0CE 100%);
+filter: blur(325px);
+}
+
 
 
 /* Basic utility classes */
@@ -115,19 +169,22 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 2rem 8rem;
 }
 
-.navbar-left {
+
+/* Reusable logo component */
+.logo {
     display: flex;
     align-items: center;
-}
-
-.logo-text {
     font-size: 1.125rem;
     font-weight: 600;
-    padding: 0.2rem;
-
 }
+
+.logo img {
+    margin-right: 0.2rem;/
+}
+
 
 .active {
     color: white;
@@ -367,9 +424,43 @@ p {
 
 /* Section-8 */
 #section-8 {
-    margin: 3rem 0;
     padding: 4rem 2rem;
     border-radius: 1.25rem;
-background: linear-gradient(213deg, #3b3939 10.15%, #2f2e32 57.81%, #1e1d25 95.23%);
-backdrop-filter: blur(5px);
+    background: linear-gradient(213deg, #3b3939 10.15%, #2f2e32 57.81%, #1e1d25 95.23%);
+    backdrop-filter: blur(5px);
+}
+
+footer {
+    height: 26.125rem;
+    flex-shrink: 0;
+    background: var(--footer-background-color);
+    padding: 2rem 8rem;
+    padding-bottom: 0;
+}
+
+.links {
+    flex: 1;
+}
+
+.links h5 {
+    color: #FFF;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 150%;
+    /* 1.6875rem */
+}
+
+.links a {
+
+    text-decoration: none;
+    margin-bottom: 1rem;
+    display: block;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 1.5rem */
 }

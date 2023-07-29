@@ -9,20 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
+
     <title>HooBank</title>
 </head>
 
 <body>
-
+  
     <header>
         <div class="navbar">
-            <div class="navbar-left">
-                <div class="logo">
-                    <img src="./navIcon.svg" alt="navIcon">
-                </div>
-                <div class="logo-text">
-                    Hoo<span class="secondary-color">Bank</span>
-                </div>
+            <!-- Reusable logo component -->
+            <div class="logo" style="font-size: 2rem;">
+                <img src="./navIcon.svg" alt="navIcon">
+                <span>Hoo<span class="secondary-color">Bank</span></span>
             </div>
 
             <ul class="navbar-right">
@@ -34,9 +32,11 @@
         </div>
 
     </header>
-
+    <br>
 
     <section id="hero-section">
+        <div class="blur-hero"></div>
+        <div class="blur-hero-left"></div>
         <div class="hero-left">
             <class class="discount-tagline mb-3">
                 <img src="./Discount.svg" alt="">
@@ -71,7 +71,7 @@
 
     </section>
 
-
+    <br>
     <!-------------------------------- Section 2 ---------------------------->
 
     <section id="section-2">
@@ -91,8 +91,10 @@
         </div>
 
     </section>
+    <br>
+    <section id="section-3" style="position: relative;"> 
+        <div class="blur-pink"></div>
 
-    <section id="section-3">
         <div class="get-started flex-column align-start">
             <h2 class="section-heading">
                 You do the business, <br>
@@ -135,11 +137,11 @@
         </div>
 
     </section>
-
+    <br>
     <!-- Billing and Invoicing section -->
 
-    <section id="section-4" class="flex">
-
+    <section id="section-4" class="flex" style="position: relative;">
+        <div class="blur-white"></div>
         <img style="min-width: 50%;" src="./assets/section4/cards.png">
 
 
@@ -159,7 +161,7 @@
             </div>
         </div>
     </section>
-
+    <br>
     <!------------------ Section 5  card deals  -->
 
     <section id="section5" class="flex">
@@ -177,7 +179,7 @@
         </div>
         <img style="max-width: 40%;" src="./assets/section5/cards.png" alt="" srcset="">
     </section>
-
+    <br>
 
     <!-- Section 6 (What People are saying about us) Testimonials -->
     <section id="section6">
@@ -191,11 +193,16 @@
                 Everything you need to accept card payments and grow your business anywhere on the planet.
             </div>
         </div>
-        <br><br>
-        <div class="flex justify-space-around">
+        
+    </section>
+    <br>
+
+    <section style="position: relative;">
+        <div class="flex justify-space-around" >
             <div class="testimonial-card flex-column align-start testimonial-selected">
                 <img class="mb-5" src="./assets/section6/quote.svg" alt="" srcset="">
-                <div class="testimonial-card-text mb-5" >Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.
+                <div class="testimonial-card-text mb-5">Money is only a tool. It will take you wherever you wish, but it
+                    will not replace you as the driver.
                 </div>
                 <div class="flex align-center">
                     <img style="width: 3rem;" src="./assets/section6/herman.png" alt="">
@@ -208,7 +215,7 @@
             </div>
             <div class="testimonial-card flex-column align-start ">
                 <img class="mb-5" src="./assets/section6/quote.svg" alt="" srcset="">
-                <div class="testimonial-card-text mb-5" >
+                <div class="testimonial-card-text mb-5">
                     Money makes your life easier. If you're lucky to have it, you're lucky.
                 </div>
                 <div class="flex align-center">
@@ -222,7 +229,7 @@
             </div>
             <div class="testimonial-card flex-column align-start ">
                 <img class="mb-5" src="./assets/section6/quote.svg" alt="" srcset="">
-                <div class="testimonial-card-text mb-5" >
+                <div class="testimonial-card-text mb-5">
                     It is usually people in the money business, finance, and international trade that are really rich.
                 </div>
                 <div class="flex align-center">
@@ -235,8 +242,9 @@
 
             </div>
         </div>
+        <div class="blur-blue"></div>
     </section>
-
+    <br>
     <section class="brands">
         <div class="flex align-center justify-space-around">
             <img src="./assets/section7/airbnb.svg" alt="">
@@ -245,21 +253,82 @@
             <img src="./assets/section7/dropbox.svg" alt="">
         </div>
     </section>
-    <section id="section-8" class="flex align-center justify-center" >
-        <div class="flex-column" >
+    <br>
+    <section id="section-8" class="flex align-center justify-center">
+        <div class="flex-column">
             <div class="section-heading mt-2 mb-2">
                 Let’s try our service now!
             </div>
             <div class="section-description" style="width: 70%;line-height: 160%;">
-                
+
                 Everything you need to accept card payments and grow your business anywhere on the planet.
             </div>
         </div>
-        <button class="section-button" style="height:4rem;width: 10.5rem; " >
+        <button class="section-button" style="height:4rem;width: 10.5rem; ">
             <span>Get Started</span>
         </button>
     </section>
+    <br>
+    <footer id="footer" >
+        <div class="flex">
 
+            <div class="flex-column " style="flex:2">
+                <div class="logo mb-5"  style="font-size: 2.536rem;">
+                    <img src="./navIcon.svg" style="height: 4.5085rem;" alt="navIcon">
+                    <span>Hoo<span class="secondary-color">Bank</span></span>
+            </div>
+            <p style="font-size: 1.125rem;line-height: 2rem;width: 75%;">
+                A new way to make the payments easy, reliable and secure.
+            </p>
+        </div>
+        <div class="links">
+            <h5>Useful Links</h5>
+            <a href="#footer">Content</a>
+            <a href="#footer">How it Works</a>
+            <a href="#footer">Create</a>
+            <a href="#footer">Explore</a>
+            <a href="#footer">Terms & Services</a>
+        </div>
+        <div class="links">
+            <h5>Community</h5>
+            <a href="#footer">Content</a>
+            <a href="#footer">Help Center</a>
+            <a href="#footer">Partners</a>
+            <a href="#footer">Suggestions</a>
+            <a href="#footer">Blog</a>
+            <a href="#footer">Newsletters</a>
+            
+        </div>
+        <div class="links">
+            <h5>Partner</h5>
+            <a href="#footer">Our Partner</a>
+            <a href="#footer">Become a Partner</a>
+        </div>
+    </div>
+        <hr style="border-color: #3F3E45;margin-top:1rem">
+        <div class="flex justify-space-between mt-5">
+            <div style="
+            color: rgba(255, 255, 255, 0.60);
+            text-align: center;
+            font-family: Poppins;
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;"
+            >
+
+                <span style="color: rgba(255, 255, 255, 0.60);
+                font-family: Abel;
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; /* 1.6875rem */">Copyright</span> &copy; 
+                2021 HooBank. All Rights Reserved. 
+            </div>
+         <img src="./assets/socials.svg" alt="" srcset="">
+        </div>
+    </footer>
+    
 </body>
 
 </html>
