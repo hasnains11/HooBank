@@ -1,0 +1,375 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #5CE1E6;
+    --font-size-large: 1.5rem;
+    --large-heading-size: 4.5rem;
+    --medium-heading-size: 2.55581rem;
+    --price-sub-heading-size: 1.27788rem;
+    --primary-font: 'Poppins', sans-serif;
+    --base-font-size: 1rem;
+    --background-color: #00040F;
+    --base-line-height: 1.3;
+
+
+}
+
+/* ---------------General-------- */
+body {
+    font-family: var(--primary-font);
+    font-size: var(--base-font-size);
+    background-color: var(--background-color);
+    margin: 2rem 8rem;
+    height: 100vh;
+    color: var(--primary-color);
+}
+
+section {
+    margin: 8rem 0;
+}
+
+
+/* 1.9125rem */
+p {
+    font-family: var(--primary-font);
+    opacity: 70%;
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    line-height: var(--line-height);
+}
+
+
+
+.section-heading {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    /* 4.8rem */
+    letter-spacing: 0.03rem;
+}
+
+.section-description {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 1.8rem */
+    letter-spacing: 0.01125rem;
+}
+
+.section-button {
+    border: none;
+    border-radius: 0.625rem;
+    background: linear-gradient(180deg, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%);
+}
+
+.section-button span {
+    color: #00040E;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 1.6875rem */
+    text-transform: capitalize;
+}
+
+
+
+
+/* Filters */
+.blur {
+    border-radius: 29.4375rem;
+    background: rgba(255, 255, 255, 0.60);
+    filter: blur(150px);
+    position: fixed;
+    top: 10;
+    right: 0;
+    /* Adjust the blur amount as needed */
+}
+
+.blur-hero {
+    width: 25.3125rem;
+    height: 29.4375rem;
+}
+
+
+/* Basic utility classes */
+.primary-color {
+    color: var(--primary-color);
+    opacity: 70%;
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+
+/*-------------NAvBAR----------------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 0.2rem;
+
+}
+
+.active {
+    color: white;
+    opacity: 100%;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar-item {
+    list-style: none;
+    margin-right: 1.5rem;
+    opacity: 0.7;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-item:hover {
+    opacity: 100%;
+}
+
+/*----Hero Section------*/
+
+#hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    min-height: 17rem;
+
+}
+
+.hero-left {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.discount-tagline {
+    display: flex;
+    border-radius: 0.625rem;
+    width: 25rem;
+    background: linear-gradient(135deg, #272727 0%, #11101D 100%);
+    align-items: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 1.6875rem */
+}
+
+.hero-text {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 140%;
+    /* 6.3rem */
+    letter-spacing: 0.045rem;
+}
+
+.hero-description {
+    width: 30rem;
+    font-size: 1.125rem;
+    line-height: 170%;
+}
+
+
+/**************** HERO RIGHT SECTION* * **** */
+
+.hero-image {
+    max-width: 32rem;
+    margin-right: -8rem;
+}
+
+/* Second Section */
+#second-section {
+    min-height: 10rem;
+}
+
+.price-heading {
+    font-size: var(--medium-heading-size);
+    font-weight: 600;
+}
+
+.price-sub-heading {
+
+    font-size: var(--price-sub-heading-size);
+    background: radial-gradient(64.33% 64.33% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ------------------------Section 3 ----------------------*/
+#section-3 {
+    min-height: 20rem;
+    display: flex;
+
+}
+
+.get-started {
+    justify-content: center;
+    padding-right: 3rem;
+}
+
+.get-started>* {
+    margin: 1.5rem 0;
+}
+
+.get-started-heading {
+    margin: 0;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    /* 4.8rem */
+    letter-spacing: 0.03rem;
+}
+
+.get-started-description {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    /* 1.9125rem */
+    letter-spacing: 0.01125rem;
+}
+
+.get-started-button {
+    width: 10.625rem;
+    height: 4rem;
+    border-radius: 0.625rem;
+    background: linear-gradient(180deg, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%);
+}
+
+.get-started-button>span {
+    color: #00040E;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 1.6875rem */
+    text-transform: capitalize;
+}
+
+
+
+
+.achievements {
+    min-width: 30rem;
+}
+
+.achievement {
+    margin-bottom: 2.2rem;
+}
+
+.achievement-heading {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    /* 1.4625rem */
+    letter-spacing: 0.01125rem;
+    text-transform: capitalize;
+}
+
+.achievement-description {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.achievement-selected {
+    padding: 1rem;
+    background: rgb(52, 52, 55);
+    background: linear-gradient(90deg, rgba(52, 52, 55, 1) 0%, rgba(28, 27, 31, 1) 25%);
+    border-radius: 1.25rem;
+    /* background: linear-gradient(154deg, rgba(255, 255, 255, 0.00) 10%, #282430 100%); */
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.10);
+}
+
+
+
+
+/*-------------Section-6------Testimonials---------------- */
+.testimonial-selected {
+    border-radius: 1.25rem;
+    background: linear-gradient(144deg, #524e4e 1.15%, #302e2efa 57.81%, #1b1a1d 93.23%);
+    backdrop-filter: blur(5px);
+}
+
+.testimonial-card {
+    max-width: 23.125rem;
+    min-height: 24.6875rem;
+    flex-shrink: 0;
+    justify-content: center;
+    padding-left: 2.5rem;
+}
+
+.testimonial-card .person-name {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    /* 160% */
+
+}
+
+.testimonial-card .person-designation {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+.testimonial-card-text {
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    /* 2.025rem */
+    letter-spacing: 0.0225rem;
+}
+
+/* Section-8 */
+#section-8 {
+    margin: 3rem 0;
+    padding: 4rem 2rem;
+    border-radius: 1.25rem;
+background: linear-gradient(213deg, #3b3939 10.15%, #2f2e32 57.81%, #1e1d25 95.23%);
+backdrop-filter: blur(5px);
+}
